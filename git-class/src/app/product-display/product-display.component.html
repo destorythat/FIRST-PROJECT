@@ -1,0 +1,37 @@
+
+
+<button (click)="viewcart()">view cart</button>
+
+<div>
+
+<button (click)="getpizza()" >pizza</button>
+
+
+</div>
+
+<div>
+
+
+  <button (click)="getburger()">burger</button>
+</div>
+
+<div>
+
+
+<button (click)="getnuggets()">nuggets</button>
+
+</div>
+
+
+
+
+
+<div *ngFor="let item of shopproduct">
+
+    <p><img [src]="item.image" style="width:250px; height:300px;"></p>
+    <p>{{item.name}}</p>
+    <p>{{item.rs| currency:'INR'}}</p>
+    <P>{{item.description}}</P>
+  <button (click)="render(item)">add to cart</button>
+
+</div>

@@ -1,0 +1,11 @@
+<p>cartclass works!</p>
+
+<div *ngFor="let item of   fromserve">
+
+    <p><img [src]="item.image" style="width:200px; height:300px;"></p>
+    <p>{{item.name}}</p>
+    <p>{{item.rs| currency:'INR'}}</p>
+    <P>{{item.description}}</P>
+   <!-- <button >add to cart</button>  -->
+
+</div>
